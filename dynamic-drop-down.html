@@ -1,0 +1,10 @@
+<div ng-init="loadCountry()">
+    <select name="country" ng-model="country" >
+        <option value="">Select Country</option>
+        <option ng-repeat="country in countries" value="{{country.id}}">{{country.name}}</option>
+    </select>
+    <br>
+    <select name="state" ng-model="state" >
+        <option value="">Select State</option>
+    </select>
+</div>
